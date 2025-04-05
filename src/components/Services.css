@@ -1,0 +1,60 @@
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--bg-color); /* Assuming you have a variable for background color */
+    padding: 2rem; /* Optional: Add some padding for better spacing */
+  }
+  
+  @media (max-width: 1200px) {
+    .services .box-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services .box-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
+.services .box-container .box{
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background-color: var(--bg-color);
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--bg-color1);
+}
+.services .box-container .box:hover{
+    box-shadow: 5px 5px 10px #00ffee;
+    border-radius: 5px;
+
+}
+
+.services .box-container .box i{
+    font-size: 3.5rem;
+    background: var(--main-color);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.services .box-container .box h3{
+    font-size: 2rem;
+    margin:.5rem 0;
+    color: var(--white);
+}
+
+.services .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.4rem;
+    color:var(--light-white);
+    padding: .5rem 0;
+}
