@@ -82,8 +82,8 @@ const Header = () => {
 					<a href="#home" className="active">
 						Home
 					</a>
-					<a href="/newssection">News
-					</a>
+					{/* <a href="/newssection">News
+					</a> */}
 					<a href="/services">Services</a>
 					<a href="#section-wrapper">Contact</a>
 				</nav>
@@ -120,9 +120,9 @@ const Header = () => {
 					<a href="/services">
 						<i className="fas fa-download"></i>Services
 					</a>
-					<a href="/newssection">
+					{/* <a href="/newssection">
 						<i className="fas fa-comments-dollar"></i>News
-					</a>
+					</a> */}
 					<a href="#section-wrapper">
 						<i className="fas fa-user"></i>Contact
 					</a>
