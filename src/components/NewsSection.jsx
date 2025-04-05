@@ -8,21 +8,16 @@ const NewsSection = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await axios.get(`https://newsapi.org/v2/everything`, {
-          params: {
-            q: 'Movies OR filmmaker',
-            pageSize: 5,
-            apiKey: '748c06cb42284e3c9574920779353f08'
-          }
-        });
-        setNewsItems(response.data.articles);
+        const response = await axios.get('/api/news');
+        setNewsItems(response.data?.articles || []);
       } catch (error) {
         console.error('Error fetching news:', error);
       }
     };
-
+  
     fetchNews();
   }, []);
+  
 
   return (
     <div className="news-section">
